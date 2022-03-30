@@ -1,0 +1,7 @@
+FIRST THINGS TO RUN/INSTALL IN NEW LINUX ENVIRONMENT
+# useful linux package
+sudo apt install build-essential dkms linux-headers-$(uname -r)
+
+# gvim
+sudo apt install vim-gtk3
+

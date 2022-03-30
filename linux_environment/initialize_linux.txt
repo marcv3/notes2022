@@ -1,0 +1,3 @@
+# to run initialization script
+chmod +x initialize_linux.sh
+./initialize_linux.sh

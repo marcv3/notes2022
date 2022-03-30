@@ -1,0 +1,6 @@
+#colors text inbetween
+    \[\033[0;32m\]       \[\033[m\] 
+#current directory
+    \W
+#user
+    \u

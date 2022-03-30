@@ -1,0 +1,46 @@
+BASIC GIT COMMANDS
+# sequence of events for git push
+    git add *
+    git commit -am "commit message"
+    git push
+
+# first thing to do to get repo
+    git clone /path/to/repository
+
+# status
+    git status
+
+# how to remove local .git directory
+    rm -fr .git
+
+STEPS TO SET UP GIT: INSTALL AND AUTO LOGIN
+# git
+sudo apt install git
+
+# generate SSH key for git. In github, go to settings->Developer settings->personal access tokens
+# copy contents of generated key into field
+# save token the key generates, github only shows it once
+ssh-keygen
+
+# install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# add homebrew to your PATH with these two commands
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/marc/.profile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# install homebrew's dependencies
+sudo apt-get install build-essential
+
+# "we recommend that you install GCC"
+brew install gcc
+
+# install github CLI (gh)
+brew install gh
+
+# authenticate login. Choose: GitHub.com, HTTPS, Yes, Paste an authentication token 
+gh auth login
+
+# enter email and username
+git config --global user.email "marc_v3@yahoo.com"
+git config --global user.name "marcv3"

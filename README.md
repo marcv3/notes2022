@@ -1,2 +1,3 @@
-# notes2022
-setup for linux environment, plus any notes for any projects
+# notes
+useful commands, files and notes.
+

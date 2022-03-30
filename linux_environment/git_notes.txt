@@ -11,7 +11,19 @@ BASIC GIT COMMANDS
     git status
 
 # how to remove local .git directory
+    # enter directory
+    rm -r *
     rm -fr .git
+
+# good way to do a git log
+    git log --oneline
+
+# how to go back to a previous commit
+    git checkout <commit-id> .
+    # then do the add/commit/push
+
+# how to delete branch
+    git branch -d <name of branch>
 
 STEPS TO SET UP GIT: INSTALL AND AUTO LOGIN
 # git
